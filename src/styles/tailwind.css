@@ -1,2 +1,22 @@
 @import 'tailwindcss' source(none);
 @source '../**/*.{js,ts,jsx,tsx}';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+
+  --color-brand-primary: #0B6EFD;
+  --color-brand-secondary: #1E88E5;
+  --color-brand-accent: #00C2FF;
+  --color-brand-bg: #F8FBFF;
+  --color-brand-dark: #102A43;
+  --color-brand-light: #5B6B7A;
+  --color-brand-success: #00C853;
+
+  --animate-marquee: marquee 40s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
